@@ -1,1 +1,1 @@
-# epam-webdriver-calculator
+# epam-calculator-framework

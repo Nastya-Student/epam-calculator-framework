@@ -1,0 +1,16 @@
+org/example/service/InstancesCreater.class
+org/example/page/YopmailPage.class
+org/example/model/Instances.class
+org/example/page/CloudGoogleResultsPage.class
+org/example/page/AbstractYopMailPage.class
+org/example/util/TestListener.class
+org/example/test/CalculatorTests.class
+org/example/driver/DriverSingleton.class
+org/example/page/CloudGooglePage.class
+org/example/service/TestDataReader.class
+org/example/page/AbstractCalculatorPage.class
+org/example/page/ResultInCalculatorPage.class
+org/example/page/CalculatorPage.class
+org/example/test/CostCalculationTest.class
+org/example/test/CommonConditions.class
+org/example/page/AbstractPage.class

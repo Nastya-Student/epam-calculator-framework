@@ -27,15 +27,15 @@ public class DriverSingleton {
                     ChromeOptions options = new ChromeOptions();
                     //options.addArguments("start-maximized"); // open Browser in maximized mode
                     options.addArguments("disable-infobars"); // disabling infobars
-                    options.addArguments("--disable-extensions"); // disabling extensions
+                    //options.addArguments("--disable-extensions"); // disabling extensions
                     //options.addArguments("--disable-gpu"); // applicable to windows os only
                     options.addArguments("--no-sandbox"); // Bypass OS security model
                     options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
                     
                     
-                    options.addArguments("--ignore-certificate-errors");
-                    options.addArguments("--disable-popup-blocking");
-                    options.addArguments("--incognito");
+                    //options.addArguments("--ignore-certificate-errors");
+                    //options.addArguments("--disable-popup-blocking");
+                    //options.addArguments("--incognito");
                     driver = new ChromeDriver(options);
                 }
             }

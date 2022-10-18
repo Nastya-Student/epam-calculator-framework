@@ -29,9 +29,9 @@ public class DriverSingleton {
                     options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
                     options.addArguments("--no-sandbox"); // Bypass OS security model
                     
-                    options.addArgument("--ignore-certificate-errors");
-                    options.addArgument("--disable-popup-blocking");
-                    options.addArgument("--incognito");
+                    options.addArguments("--ignore-certificate-errors");
+                    options.addArguments("--disable-popup-blocking");
+                    options.addArguments("--incognito");
                     driver = new ChromeDriver(options);
                 }
             }

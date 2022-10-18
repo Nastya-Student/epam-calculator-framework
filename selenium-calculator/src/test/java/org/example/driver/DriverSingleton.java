@@ -17,7 +17,9 @@ public class DriverSingleton {
             switch (System.getProperty("browser")){
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    FirefoxOptions options = new FirefoxOptions();
+                    options.addArguments("--headless");
+                    driver = new FirefoxDriver(options);
                 }
                 default: {
                     WebDriverManager.chromedriver().setup();

@@ -37,10 +37,12 @@ public class DriverSingleton {
                     //options.addArguments("--disable-popup-blocking");
                     //options.addArguments("--incognito");
                     
-                    options.addArguments("--headless"); 
-                    options.addArguments("--no-sandbox"); 
-                    options.addArguments("--disable-gpu"); 
-                    options.addArguments("--disable-dev-shm-usage"); 
+                    //options.addArguments("--headless"); 
+                    //options.addArguments("--no-sandbox"); 
+                    //options.addArguments("--disable-gpu"); 
+                    //options.addArguments("--disable-dev-shm-usage"); 
+                    
+                    options.setExperimentalOption("useAutomationExtension", false);
                     
                     
                     driver = new ChromeDriver(options);

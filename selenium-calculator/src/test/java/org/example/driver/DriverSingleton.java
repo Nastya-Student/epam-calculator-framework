@@ -22,7 +22,8 @@ public class DriverSingleton {
                     options.addArguments("--headless");
                     options.addArguments("--no-sandbox"); 
                     options.addArguments("--disable-gpu"); 
-                    options.addArguments("--disable-dev-shm-usage"); 
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("start-maximized");
                     driver = new FirefoxDriver(options);
                 }
                 default: {

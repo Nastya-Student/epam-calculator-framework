@@ -19,11 +19,13 @@ public class DriverSingleton {
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions options = new FirefoxOptions();
+                    
+                    options.addArguments("start-maximized");
                     options.addArguments("--headless");
                     options.addArguments("--no-sandbox"); 
                     options.addArguments("--disable-gpu"); 
                     options.addArguments("--disable-dev-shm-usage");
-                    options.addArguments("start-maximized");
+                    
                     driver = new FirefoxDriver(options);
                 }
                 default: {

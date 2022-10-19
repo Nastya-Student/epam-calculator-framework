@@ -38,7 +38,7 @@ public class DriverSingleton {
                     //options.addArguments("--incognito");
                     
                     
-                    options.addArguments("--remote-debugging-port=9222");
+                    //options.addArguments("--remote-debugging-port=9222");
                     options.addArguments("--headless"); 
                     options.addArguments("--no-sandbox"); 
                     options.addArguments("--disable-gpu"); 

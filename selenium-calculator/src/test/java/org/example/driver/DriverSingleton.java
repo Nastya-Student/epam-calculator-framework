@@ -19,7 +19,10 @@ public class DriverSingleton {
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions options = new FirefoxOptions();
-                    //options.addArguments("--headless");
+                    options.addArguments("--headless");
+                    options.addArguments("--no-sandbox"); 
+                    options.addArguments("--disable-gpu"); 
+                    options.addArguments("--disable-dev-shm-usage"); 
                     driver = new FirefoxDriver(options);
                 }
                 default: {
@@ -39,7 +42,7 @@ public class DriverSingleton {
                     
                     
                     //options.addArguments("--remote-debugging-port=9222");
-                    //options.addArguments("--headless"); 
+                    options.addArguments("--headless"); 
                     options.addArguments("--no-sandbox"); 
                     options.addArguments("--disable-gpu"); 
                     options.addArguments("--disable-dev-shm-usage"); 

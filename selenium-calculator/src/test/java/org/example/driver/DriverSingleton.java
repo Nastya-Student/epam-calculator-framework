@@ -56,7 +56,7 @@ public class DriverSingleton {
                     driver = new ChromeDriver(options);
                 }
             }
-            driver.manage().window().maximize();
+               driver.manage().window().setSize(new Dimension(2880,1800));
         }
         return driver;
     }

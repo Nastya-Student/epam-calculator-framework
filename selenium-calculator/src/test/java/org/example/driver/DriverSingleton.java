@@ -20,7 +20,7 @@ public class DriverSingleton {
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions options = new FirefoxOptions();
                     
-                    options.addArguments("start-maximized");
+                    options.addArguments("--start-maximized");
                     options.addArguments("--headless");
                     options.addArguments("--no-sandbox"); 
                     options.addArguments("--disable-gpu"); 
